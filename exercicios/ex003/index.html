@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>ex 3</title>
+</head>
+<body>
+    <h1>inciante estudo DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div>clique em mim</div>
+    <input type="number" name="" id="numb">
+    <script>
+        var num = window.document.getElementById('numb')
+
+        var p1 = window.document.getElementsByTagName('p')[1] // usando [] depois dos ()  é possivel selecionar qaul elemento.
+        p1.style.color = 'red'
+
+        if(num >5){
+            window.document.write.InnerHTML('acima de 5')
+        }
+        else{
+            window.document.write.InnerHTML('abaixo de 5')
+        }
+        // Se eu estiver trabalhando com um comando de seleção (ex: getElementsByName) e esse comando for no plural, getElement's'ByName, é possivel fazer a seleçao com o conchetes
+    </script>
+</body>
+</html>
